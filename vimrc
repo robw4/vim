@@ -21,10 +21,13 @@ Plugin 'jistr/vim-nerdtree-tabs'
 Plugin 'kien/ctrlp.vim'
 "Git Integration
 Plugin 'tpope/vim-fugitive'
-
+"
 Plugin 'junegunn/goyo.vim'
 "Display bar
 Plugin 'Lokaltog/powerline', {'rtp': 'powerline/bindings/vim/'}
+
+Plugin 'godlygeek/tabular'
+Plugin 'plasticboy/vim-markdown'
 call vundle#end()            " required
 filetype plugin indent on    " required
 
@@ -71,6 +74,7 @@ set foldmethod=indent   "Fold at indents
 set foldlevel=99
 set nu    "Line numbering on
 set hlsearch  "Highlight when searching
+set backspace=indent,eol,start
 
 " Code Linting
 let g:ale_python_pylint_options='--max-line-length=240'
