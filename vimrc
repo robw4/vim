@@ -27,7 +27,6 @@ Plugin 'Lokaltog/powerline', {'rtp': 'powerline/bindings/vim/'}
 
 Plugin 'godlygeek/tabular'
 Plugin 'plasticboy/vim-markdown'
-
 Plugin 'python-mode/python-mode'
 call vundle#end()            " required
 filetype plugin indent on    " required
