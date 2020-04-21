@@ -21,13 +21,14 @@ Plugin 'jistr/vim-nerdtree-tabs'
 Plugin 'kien/ctrlp.vim'
 "Git Integration
 Plugin 'tpope/vim-fugitive'
-"
 Plugin 'junegunn/goyo.vim'
 "Display bar
 Plugin 'Lokaltog/powerline', {'rtp': 'powerline/bindings/vim/'}
 
 Plugin 'godlygeek/tabular'
 Plugin 'plasticboy/vim-markdown'
+
+Plugin 'python-mode/python-mode'
 call vundle#end()            " required
 filetype plugin indent on    " required
 
@@ -67,6 +68,7 @@ autocmd FileType python set autoindent    "Set up autoidenting from previous lin
 " Python Highlighting
 let python_highlight_all=1
 syntax on
+hi pythonSelf  ctermfg=68  guifg=#5f87d7 cterm=bold gui=bold
 
 " --- Set parameters
 "" Allow code folding
@@ -81,7 +83,7 @@ let g:ale_python_pylint_options='--max-line-length=240'
 " Display docstrings
 let g:SimpylFold_docstring_preview=1
 let g:ycm_autoclose_preview_window_after_completion=1
-let g:ycm_goto_buffer_command='split'
+" let g:ycm_goto_buffer_command='split'
 
 " --- Colorscheme ---
 "colorscheme darcula
